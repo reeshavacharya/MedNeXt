@@ -1,0 +1,338 @@
+[calibrate] Loading model from: /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+[calibrate] Network stem expects 1 input channel(s)
+[calibrate] Registered hooks on 0 layer(s)
+[calibrate] Running calibration on 30 preprocessed cases...
+[calibrate] Slicing data channels from 2 to 1 for file ABD_001.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 441, 342, 342)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 125, 188, 250, 313], [0, 54, 107, 160, 214], [0, 54, 107, 160, 214]]
+number of tiles: 150
+computing Gaussian
+done
+prediction done
+[calibrate] Processed 1/30: ABD_001.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_002.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 417, 369, 369)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 173, 231, 289], [0, 60, 120, 181, 241], [0, 60, 120, 181, 241]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 2/30: ABD_002.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_003.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 594, 460, 460)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 175, 233, 291, 350, 408, 466], [0, 55, 111, 166, 221, 277, 332], [0, 55, 111, 166, 221, 277, 332]]
+number of tiles: 441
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 3/30: ABD_003.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_004.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 420, 304, 304)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 117, 175, 234, 292], [0, 59, 117, 176], [0, 59, 117, 176]]
+number of tiles: 96
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 4/30: ABD_004.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_005.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 351, 464, 464)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 167, 223], [0, 56, 112, 168, 224, 280, 336], [0, 56, 112, 168, 224, 280, 336]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 5/30: ABD_005.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_006.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 393, 359, 359)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 53, 106, 159, 212, 265], [0, 58, 116, 173, 231], [0, 58, 116, 173, 231]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 6/30: ABD_006.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_007.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 489, 383, 383)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 120, 180, 241, 301, 361], [0, 64, 128, 191, 255], [0, 64, 128, 191, 255]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 7/30: ABD_007.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_008.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 444, 373, 373)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 61, 122, 184, 245], [0, 61, 122, 184, 245]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 8/30: ABD_008.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_009.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 372, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 9/30: ABD_009.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_010.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 444, 400, 400)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 54, 109, 163, 218, 272], [0, 54, 109, 163, 218, 272]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 10/30: ABD_010.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_011.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 429, 350, 350)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 120, 181, 241, 301], [0, 56, 111, 166, 222], [0, 56, 111, 166, 222]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 11/30: ABD_011.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_012.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 445, 393, 393)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 127, 190, 254, 317], [0, 53, 106, 159, 212, 265], [0, 53, 106, 159, 212, 265]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 12/30: ABD_012.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_013.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 480, 362, 362)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 59, 117, 176, 235, 293, 352], [0, 58, 117, 176, 234], [0, 58, 117, 176, 234]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 13/30: ABD_013.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_014.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 372, 351, 351)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 56, 112, 167, 223], [0, 56, 112, 167, 223]]
+number of tiles: 125
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 14/30: ABD_014.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_015.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 425, 426, 426)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 59, 119, 178, 238, 297], [0, 60, 119, 179, 238, 298], [0, 60, 119, 179, 238, 298]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 15/30: ABD_015.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_016.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 655, 399, 399)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 59, 117, 176, 234, 293, 351, 410, 468, 527], [0, 54, 108, 163, 217, 271], [0, 54, 108, 163, 217, 271]]
+number of tiles: 360
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 16/30: ABD_016.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_017.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 440, 397, 397)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 62, 125, 187, 250, 312], [0, 54, 108, 161, 215, 269], [0, 54, 108, 161, 215, 269]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 17/30: ABD_017.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_018.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 445, 408, 408)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 127, 190, 254, 317], [0, 56, 112, 168, 224, 280], [0, 56, 112, 168, 224, 280]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 18/30: ABD_018.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_019.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 300, 448, 448)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 115, 172], [0, 64, 128, 192, 256, 320], [0, 64, 128, 192, 256, 320]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 19/30: ABD_019.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_020.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 459, 380, 380)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 55, 110, 166, 221, 276, 331], [0, 63, 126, 189, 252], [0, 63, 126, 189, 252]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 20/30: ABD_020.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_021.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 279, 429, 429)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 50, 101, 151], [0, 60, 120, 181, 241, 301], [0, 60, 120, 181, 241, 301]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 21/30: ABD_021.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_022.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 432, 379, 379)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 182, 243, 304], [0, 63, 126, 188, 251], [0, 63, 126, 188, 251]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 22/30: ABD_022.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_023.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 520, 417, 417)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 168, 224, 280, 336, 392], [0, 58, 116, 173, 231, 289], [0, 58, 116, 173, 231, 289]]
+number of tiles: 288
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 23/30: ABD_023.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_024.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 490, 344, 344)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 241, 302, 362], [0, 54, 108, 162, 216], [0, 54, 108, 162, 216]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 24/30: ABD_024.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_025.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 470, 471, 471)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 285, 342], [0, 57, 114, 172, 229, 286, 343], [0, 57, 114, 172, 229, 286, 343]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 25/30: ABD_025.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_026.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 552, 382, 382)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 121, 182, 242, 303, 363, 424], [0, 64, 127, 190, 254], [0, 64, 127, 190, 254]]
+number of tiles: 200
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 26/30: ABD_026.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_027.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 495, 360, 360)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 184, 245, 306, 367], [0, 58, 116, 174, 232], [0, 58, 116, 174, 232]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 27/30: ABD_027.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_028.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 500, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 28/30: ABD_028.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_029.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 450, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 54, 107, 161, 215, 268, 322], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 29/30: ABD_029.npz
+[calibrate] Slicing data channels from 2 to 1 for file ABD_030.npz
+debug: mirroring False mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: False
+data shape: (1, 585, 380, 380)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 286, 343, 400, 457], [0, 63, 126, 189, 252], [0, 63, 126, 189, 252]]
+number of tiles: 225
+using precomputed Gaussian
+prediction done
+[calibrate] Processed 30/30: ABD_030.npz
+[calibrate] Computed scales for 79 layer(s)
+[calibrate] Saved calibration scales to: /home/r/reeshav/MedNeXt/quantization/scales.json

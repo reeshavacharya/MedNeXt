@@ -1,0 +1,504 @@
+Running inference for BTCV Task017 using MedNeXt S (fold 0)
+Input imagesTs  : /data/reeshav/MedNeXt_dataset/Abdomen/nnUNet_raw_data/Task017_AbdominalOrganSegmentation/imagesTs
+Output folder   : /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0
+using model stored in  /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+This model expects 1 input modalities for each image
+Found 20 unique case ids, here are some examples: ['ABD_073' 'ABD_071' 'ABD_067' 'ABD_070' 'ABD_070' 'ABD_076' 'ABD_068'
+ 'ABD_075' 'ABD_062' 'ABD_070']
+If they don't look right, make sure to double check your filenames. They must end with _0000.nii.gz etc
+emptying cuda cache
+loading parameters for folds, [0]
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+starting preprocessing generator
+starting prediction...
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_061.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 414, 350, 350)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 172, 229, 286], [0, 56, 111, 166, 222], [0, 56, 111, 166, 222]]
+number of tiles: 150
+computing Gaussian
+done
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_063.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 475, 407, 407)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 174, 231, 289, 347], [0, 56, 112, 167, 223, 279], [0, 56, 112, 167, 223, 279]]
+number of tiles: 252
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_064.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 477, 398, 398)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 174, 233, 291, 349], [0, 54, 108, 162, 216, 270], [0, 54, 108, 162, 216, 270]]
+number of tiles: 252
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_065.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 456, 374, 374)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 55, 109, 164, 219, 273, 328], [0, 62, 123, 184, 246], [0, 62, 123, 184, 246]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_062.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 450, 484, 484)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 54, 107, 161, 215, 268, 322], [0, 59, 119, 178, 237, 297, 356], [0, 59, 119, 178, 237, 297, 356]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_066.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 513, 429, 429)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 55, 110, 165, 220, 275, 330, 385], [0, 60, 120, 181, 241, 301], [0, 60, 120, 181, 241, 301]]
+number of tiles: 288
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_069.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 485, 404, 404)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 119, 178, 238, 298, 357], [0, 55, 110, 166, 221, 276], [0, 55, 110, 166, 221, 276]]
+number of tiles: 252
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_067.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 519, 428, 428)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 168, 223, 279, 335, 391], [0, 60, 120, 180, 240, 300], [0, 60, 120, 180, 240, 300]]
+number of tiles: 288
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_070.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 360, 373, 373)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 174, 232], [0, 61, 122, 184, 245], [0, 61, 122, 184, 245]]
+number of tiles: 125
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_071.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 550, 451, 451)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 241, 301, 362, 422], [0, 54, 108, 162, 215, 269, 323], [0, 54, 108, 162, 215, 269, 323]]
+number of tiles: 392
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_068.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 430, 360, 360)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 242, 302], [0, 58, 116, 174, 232], [0, 58, 116, 174, 232]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_072.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 456, 368, 368)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 55, 109, 164, 219, 273, 328], [0, 60, 120, 180, 240], [0, 60, 120, 180, 240]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_075.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 465, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 168, 225, 281, 337], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_073.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 390, 279, 279)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 52, 105, 157, 210, 262], [0, 50, 101, 151], [0, 50, 101, 151]]
+number of tiles: 96
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_076.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 339, 400, 400)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 53, 106, 158, 211], [0, 54, 109, 163, 218, 272], [0, 54, 109, 163, 218, 272]]
+number of tiles: 180
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_077.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 453, 402, 402)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 54, 108, 162, 217, 271, 325], [0, 55, 110, 164, 219, 274], [0, 55, 110, 164, 219, 274]]
+number of tiles: 252
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_074.nii.gzpreprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_063.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 95, 512, 512) after crop: (1, 95, 512, 512) spacing: [5.         0.79492199 0.79492199] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.79492199, 0.79492199]), 'spacing_transposed': array([5.        , 0.79492199, 0.79492199]), 'data.shape (data is transposed)': (1, 95, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 475, 407, 407)} 
+
+(1, 475, 407, 407)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_069.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 97, 512, 512) after crop: (1, 97, 512, 512) spacing: [5.         0.78899997 0.78899997] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.78899997, 0.78899997]), 'spacing_transposed': array([5.        , 0.78899997, 0.78899997]), 'data.shape (data is transposed)': (1, 97, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 485, 404, 404)} 
+
+(1, 485, 404, 404)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_075.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 93, 512, 512) after crop: (1, 93, 512, 512) spacing: [5.         0.97656202 0.97656202] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.97656202, 0.97656202]), 'spacing_transposed': array([5.        , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 93, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 465, 500, 500)} 
+
+(1, 465, 500, 500)
+This worker has ended successfully, no errors to report
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_064.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 159, 512, 512) after crop: (1, 159, 512, 512) spacing: [3.         0.77734375 0.77734375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.77734375, 0.77734375]), 'spacing_transposed': array([3.        , 0.77734375, 0.77734375]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 477, 398, 398)} 
+
+(1, 477, 398, 398)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_070.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 120, 512, 512) after crop: (1, 120, 512, 512) spacing: [3.         0.72851562 0.72851562] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.72851562, 0.72851562]), 'spacing_transposed': array([3.        , 0.72851562, 0.72851562]), 'data.shape (data is transposed)': (1, 120, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 360, 373, 373)} 
+
+(1, 360, 373, 373)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_076.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 113, 512, 512) after crop: (1, 113, 512, 512) spacing: [3.      0.78125 0.78125] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.78125, 0.78125]), 'spacing_transposed': array([3.     , 0.78125, 0.78125]), 'data.shape (data is transposed)': (1, 113, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 339, 400, 400)} 
+
+(1, 339, 400, 400)
+This worker has ended successfully, no errors to report
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_065.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 152, 512, 512) after crop: (1, 152, 512, 512) spacing: [3.         0.73046875 0.73046875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.73046875, 0.73046875]), 'spacing_transposed': array([3.        , 0.73046875, 0.73046875]), 'data.shape (data is transposed)': (1, 152, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 456, 374, 374)} 
+
+(1, 456, 374, 374)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_071.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 110, 512, 512) after crop: (1, 110, 512, 512) spacing: [5.         0.88085938 0.88085938] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.88085938, 0.88085938]), 'spacing_transposed': array([5.        , 0.88085938, 0.88085938]), 'data.shape (data is transposed)': (1, 110, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 550, 451, 451)} 
+
+(1, 550, 451, 451)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_077.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 151, 512, 512) after crop: (1, 151, 512, 512) spacing: [3.         0.78515625 0.78515625] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.78515625, 0.78515625]), 'spacing_transposed': array([3.        , 0.78515625, 0.78515625]), 'data.shape (data is transposed)': (1, 151, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 453, 402, 402)} 
+
+(1, 453, 402, 402)
+This worker has ended successfully, no errors to report
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_066.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 171, 512, 512) after crop: (1, 171, 512, 512) spacing: [3.         0.83789062 0.83789062] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.83789062, 0.83789062]), 'spacing_transposed': array([3.        , 0.83789062, 0.83789062]), 'data.shape (data is transposed)': (1, 171, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 513, 429, 429)} 
+
+(1, 513, 429, 429)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_072.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 152, 512, 512) after crop: (1, 152, 512, 512) spacing: [3.      0.71875 0.71875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.71875, 0.71875]), 'spacing_transposed': array([3.     , 0.71875, 0.71875]), 'data.shape (data is transposed)': (1, 152, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 456, 368, 368)} 
+
+(1, 456, 368, 368)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_078.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 89, 512, 512) after crop: (1, 89, 512, 512) spacing: [5.         0.86523402 0.86523402] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.86523402, 0.86523402]), 'spacing_transposed': array([5.        , 0.86523402, 0.86523402]), 'data.shape (data is transposed)': (1, 89, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 445, 443, 443)} 
+
+(1, 445, 443, 443)
+This worker has ended successfully, no errors to report
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_061.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 138, 512, 512) after crop: (1, 138, 512, 512) spacing: [3.         0.68359375 0.68359375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.68359375, 0.68359375]), 'spacing_transposed': array([3.        , 0.68359375, 0.68359375]), 'data.shape (data is transposed)': (1, 138, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 414, 350, 350)} 
+
+(1, 414, 350, 350)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_067.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 173, 512, 512) after crop: (1, 173, 512, 512) spacing: [3.        0.8359375 0.8359375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.       , 0.8359375, 0.8359375]), 'spacing_transposed': array([3.       , 0.8359375, 0.8359375]), 'data.shape (data is transposed)': (1, 173, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 519, 428, 428)} 
+
+(1, 519, 428, 428)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_073.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 130, 512, 512) after crop: (1, 130, 512, 512) spacing: [3.         0.54492188 0.54492188] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.54492188, 0.54492188]), 'spacing_transposed': array([3.        , 0.54492188, 0.54492188]), 'data.shape (data is transposed)': (1, 130, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 390, 279, 279)} 
+
+(1, 390, 279, 279)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_079.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 87, 512, 512) after crop: (1, 87, 512, 512) spacing: [5.        0.9765625 0.9765625] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.       , 0.9765625, 0.9765625]), 'spacing_transposed': array([5.       , 0.9765625, 0.9765625]), 'data.shape (data is transposed)': (1, 87, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 435, 500, 500)} 
+
+(1, 435, 500, 500)
+This worker has ended successfully, no errors to report
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_062.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 90, 512, 512) after crop: (1, 90, 512, 512) spacing: [5.         0.94599998 0.94599998] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.94599998, 0.94599998]), 'spacing_transposed': array([5.        , 0.94599998, 0.94599998]), 'data.shape (data is transposed)': (1, 90, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 450, 484, 484)} 
+
+(1, 450, 484, 484)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_068.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 86, 512, 512) after crop: (1, 86, 512, 512) spacing: [5.       0.703125 0.703125] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.703125, 0.703125]), 'spacing_transposed': array([5.      , 0.703125, 0.703125]), 'data.shape (data is transposed)': (1, 86, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 430, 360, 360)} 
+
+(1, 430, 360, 360)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_074.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 86, 512, 512) after crop: (1, 86, 512, 512) spacing: [5.      0.78125 0.78125] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.     , 0.78125, 0.78125]), 'spacing_transposed': array([5.     , 0.78125, 0.78125]), 'data.shape (data is transposed)': (1, 86, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 430, 400, 400)} 
+
+(1, 430, 400, 400)
+preprocessing /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_080.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 95, 512, 512) after crop: (1, 95, 512, 512) spacing: [5.         0.78100002 0.78100002] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.78100002, 0.78100002]), 'spacing_transposed': array([5.        , 0.78100002, 0.78100002]), 'data.shape (data is transposed)': (1, 95, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 475, 400, 400)} 
+
+(1, 475, 400, 400)
+This worker has ended successfully, no errors to report
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+force_separate_z: None interpolation order: 1
+separate z: True lowres axis [0]
+separate z, order in z is 0 order inplane is 1
+
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 430, 400, 400)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 242, 302], [0, 54, 109, 163, 218, 272], [0, 54, 109, 163, 218, 272]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_078.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 445, 443, 443)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 127, 190, 254, 317], [0, 63, 126, 189, 252, 315], [0, 63, 126, 189, 252, 315]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_079.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 435, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 123, 184, 246, 307], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 294
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+predicting /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0/ABD_080.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 475, 400, 400)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 174, 231, 289, 347], [0, 54, 109, 163, 218, 272], [0, 54, 109, 163, 218, 272]]
+number of tiles: 252
+using precomputed Gaussian
+prediction done
+This output is too large for python process-process communication. Saving output temporarily to disk
+inference done. Now waiting for the segmentation export to finish...
+WARNING! Cannot run postprocessing because the postprocessing file is missing. Make sure to run consolidate_folds in the output folder of the model first!
+The folder you need to run this in is /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+Inference finished. Segmentations are in: /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0

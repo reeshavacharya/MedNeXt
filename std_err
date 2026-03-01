@@ -1,0 +1,4 @@
+/home/r/reeshav/MedNeXt/nnunet_mednext/training/network_training/network_trainer.py:410: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.amp_grad_scaler = GradScaler()
+/home/r/reeshav/MedNeXt/nnunet_mednext/network_architecture/neural_network.py:141: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with context():

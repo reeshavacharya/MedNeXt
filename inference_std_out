@@ -1,0 +1,13 @@
+Running inference for BTCV Task017 using MedNeXt S (fold 0)
+Input imagesTs  : /data/reeshav/MedNeXt_dataset/Abdomen/nnUNet_raw_data/Task017_AbdominalOrganSegmentation/imagesTs
+Output folder   : /home/r/reeshav/MedNeXt/predictions/BTCV_Task017_MedNeXt_S_kernel3_fold0
+using model stored in  /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+This model expects 1 input modalities for each image
+Found 20 unique case ids, here are some examples: ['ABD_066' 'ABD_076' 'ABD_069' 'ABD_066' 'ABD_077' 'ABD_072' 'ABD_074'
+ 'ABD_072' 'ABD_070' 'ABD_078']
+If they don't look right, make sure to double check your filenames. They must end with _0000.nii.gz etc
+emptying cuda cache
+loading parameters for folds, [0]
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+starting preprocessing generator
+starting prediction...

@@ -16,11 +16,23 @@
 from collections import OrderedDict
 from nnunet_mednext.paths import nnUNet_raw_data
 from batchgenerators.utilities.file_and_folder_operations import *
+import os
 import shutil
 
 
 if __name__ == "__main__":
-    base = "/media/yunlu/10TB/research/other_data/Multi-Atlas Labeling Beyond the Cranial Vault/RawData/"
+    # BTCV data (all organs) is assumed to be available at
+    #   /data/reeshav/MedNeXt_dataset/Abdomen/RawData
+    # with the following structure (standard BTCV release):
+    #   RawData/Training/img/   -> training images  (imgXXXX.nii.gz)
+    #   RawData/Training/label/ -> training labels  (labelXXXX.nii.gz)
+    #   RawData/Testing/img/    -> test images      (imgXXXX.nii.gz)
+    #
+    # We point directly to this external data location so that the
+    # conversion populates nnUNet_raw_data for Task017 using the
+    # official multi-organ BTCV annotations.
+
+    base = "/data/reeshav/MedNeXt_dataset/Abdomen/RawData"
 
     task_id = 17
     task_name = "AbdominalOrganSegmentation"
@@ -36,26 +48,45 @@ if __name__ == "__main__":
     maybe_mkdir_p(imagests)
     maybe_mkdir_p(labelstr)
 
-    train_folder = join(base, "Training/img")
-    label_folder = join(base, "Training/label")
-    test_folder = join(base, "Test/img")
+    # Map to the BTCV folder names present under the new RawData location
+    train_img_folder = join(base, "Training", "img")
+    train_label_folder = join(base, "Training", "label")
+    test_img_folder = join(base, "Testing", "img")
     train_patient_names = []
     test_patient_names = []
-    train_patients = subfiles(train_folder, join=False, suffix = 'nii.gz')
-    for p in train_patients:
-        serial_number = int(p[3:7])
+
+    # The official BTCV files are named like
+    #   imgXXXX.nii.gz   (image)
+    #   labelXXXX.nii.gz (label)
+    # We iterate over all training labels, derive the corresponding
+    # image filename, and generate sequential patient IDs
+    # (ABD_001, ABD_002, ...).
+    train_labels = subfiles(train_label_folder, join=False, suffix='nii.gz')
+    for i, p in enumerate(sorted(train_labels)):
+        serial_number = i + 1
         train_patient_name = f'{prefix}_{serial_number:03d}.nii.gz'
-        label_file = join(label_folder, f'label{p[3:]}')
-        image_file = join(train_folder, p)
+        # p should be like 'labelXXXX.nii.gz'
+        stem = p[:-7]  # 'labelXXXX'
+        if not stem.startswith('label'):
+            raise RuntimeError(f"Unexpected training label file name: {p}")
+        case_id = stem[len('label'):]
+        image_file = join(train_img_folder, f"img{case_id}.nii.gz")
+        label_file = join(train_label_folder, p)
         shutil.copy(image_file, join(imagestr, f'{train_patient_name[:7]}_0000.nii.gz'))
         shutil.copy(label_file, join(labelstr, train_patient_name))
         train_patient_names.append(train_patient_name)
 
-    test_patients = subfiles(test_folder, join=False, suffix=".nii.gz")
-    for p in test_patients:
-        p = p[:-7]
-        image_file = join(test_folder, p + ".nii.gz")
-        serial_number = int(p[3:7])
+    # Test images are in Testing/img/imgXXXX.nii.gz. We preserve
+    # the numeric order derived from XXXX when constructing
+    # patient IDs (ABD_XXXX).
+    test_imgs = subfiles(test_img_folder, join=False, suffix=".nii.gz")
+    for p in sorted(test_imgs):
+        stem = p[:-7]  # 'imgXXXX'
+        if not stem.startswith('img'):
+            raise RuntimeError(f"Unexpected test image file name: {p}")
+        case_id = stem[len('img'):]
+        image_file = join(test_img_folder, p)
+        serial_number = int(case_id)
         test_patient_name = f'{prefix}_{serial_number:03d}.nii.gz'
         shutil.copy(image_file, join(imagests, f'{test_patient_name[:7]}_0000.nii.gz'))
         test_patient_names.append(test_patient_name)

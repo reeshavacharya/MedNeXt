@@ -1,0 +1,3 @@
+slurmstepd: error: *** STEP 305024.0 ON GPU47 CANCELLED AT 2026-02-28T20:18:08 ***
+slurmstepd: error: *** JOB 305024 ON GPU47 CANCELLED AT 2026-02-28T20:18:08 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

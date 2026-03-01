@@ -1,0 +1,23 @@
+/home/r/reeshav/MedNeXt/.venv/lib/python3.9/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GeForce GTX TITAN X which is of cuda capability 5.2.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (7.0) - (12.0)
+    
+  warnings.warn(
+/home/r/reeshav/MedNeXt/.venv/lib/python3.9/site-packages/torch/cuda/__init__.py:304: UserWarning: 
+    Please install PyTorch with a following CUDA
+    configurations:  12.6 following instructions at
+    https://pytorch.org/get-started/locally/
+    
+  warnings.warn(matched_cuda_warn.format(matched_arches))
+/home/r/reeshav/MedNeXt/.venv/lib/python3.9/site-packages/torch/cuda/__init__.py:326: UserWarning: 
+NVIDIA GeForce GTX TITAN X with CUDA capability sm_52 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.
+If you want to use the NVIDIA GeForce GTX TITAN X GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+/home/r/reeshav/MedNeXt/nnunet_mednext/training/network_training/network_trainer.py:410: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.amp_grad_scaler = GradScaler()
+/home/r/reeshav/MedNeXt/nnunet_mednext/network_architecture/neural_network.py:141: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with context():
+srun: error: GPU41: task 0: Segmentation fault (core dumped)

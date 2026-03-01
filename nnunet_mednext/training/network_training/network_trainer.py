@@ -316,8 +316,14 @@ class NetworkTrainer(object):
         self.print_to_log_file("loading checkpoint", fname, "train=", train)
         if not self.was_initialized:
             self.initialize(train)
-        # saved_model = torch.load(fname, map_location=torch.device('cuda', torch.cuda.current_device()))
-        saved_model = torch.load(fname, map_location=torch.device('cpu'))
+        # In PyTorch 2.6+ the default weights_only=True can break loading old-style
+        # nnUNet checkpoints that store more than just tensor weights. Explicitly
+        # set weights_only=False for compatibility, falling back for older PyTorch
+        try:
+            saved_model = torch.load(fname, map_location=torch.device('cpu'), weights_only=False)
+        except TypeError:
+            # Older torch versions do not support weights_only argument
+            saved_model = torch.load(fname, map_location=torch.device('cpu'))
         self.load_checkpoint_ram(saved_model, train)
 
     @abstractmethod

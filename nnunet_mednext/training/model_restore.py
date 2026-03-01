@@ -144,7 +144,16 @@ def load_model_and_checkpoint_files(folder, folds=None, mixed_precision=None, ch
     trainer.initialize(False)
     all_best_model_files = [join(i, "%s.model" % checkpoint_name) for i in folds]
     print("using the following model files: ", all_best_model_files)
-    all_params = [torch.load(i, map_location=torch.device('cpu')) for i in all_best_model_files]
+    # In PyTorch 2.6+ torch.load defaults to weights_only=True which breaks loading
+    # classic nnUNet checkpoints (they store more than just tensor weights). Force
+    # weights_only=False for these local, trusted checkpoint files, with a fallback
+    # for older torch versions that don't support the argument.
+    all_params = []
+    for fname in all_best_model_files:
+        try:
+            all_params.append(torch.load(fname, map_location=torch.device('cpu'), weights_only=False))
+        except TypeError:
+            all_params.append(torch.load(fname, map_location=torch.device('cpu')))
     return trainer, all_params
 
 

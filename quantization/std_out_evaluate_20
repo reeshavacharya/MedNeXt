@@ -1,0 +1,884 @@
+[evaluate] Preparing case list from imagesTr...
+This model expects 1 input modalities for each image
+Found 30 unique case ids, here are some examples: ['ABD_027' 'ABD_005' 'ABD_025' 'ABD_017' 'ABD_021' 'ABD_028' 'ABD_025'
+ 'ABD_005' 'ABD_029' 'ABD_006']
+If they don't look right, make sure to double check your filenames. They must end with _0000.nii.gz etc
+[evaluate] Using 20 cases out of 30 for evaluation.
+[evaluate] Loading clean FP32 trainer...
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+[evaluate] Loading fake-quantized trainer...
+[quantized_model] Loading FP32 model from /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+[quantized_model] Loaded scales for 79 layer(s)
+[evaluate] Running inference with clean model...
+Starting preprocessing...
+Starting prediction...
+[evaluate] Prediction loop over 20 case(s)...
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_004.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 140, 512, 512) after crop: (1, 140, 512, 512) spacing: [3.      0.59375 0.59375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.59375, 0.59375]), 'spacing_transposed': array([3.     , 0.59375, 0.59375]), 'data.shape (data is transposed)': (1, 140, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 420, 304, 304)} 
+
+[preprocess] data shape: (1, 420, 304, 304)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_010.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 148, 512, 512) after crop: (1, 148, 512, 512) spacing: [3.      0.78125 0.78125] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.78125, 0.78125]), 'spacing_transposed': array([3.     , 0.78125, 0.78125]), 'data.shape (data is transposed)': (1, 148, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 444, 400, 400)} 
+
+[preprocess] data shape: (1, 444, 400, 400)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_019.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 100, 512, 512) after crop: (1, 100, 512, 512) spacing: [3.    0.875 0.875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.   , 0.875, 0.875]), 'spacing_transposed': array([3.   , 0.875, 0.875]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 300, 448, 448)} 
+
+[preprocess] data shape: (1, 300, 448, 448)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_025.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 94, 512, 512) after crop: (1, 94, 512, 512) spacing: [5.         0.91992199 0.91992199] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.91992199, 0.91992199]), 'spacing_transposed': array([5.        , 0.91992199, 0.91992199]), 'data.shape (data is transposed)': (1, 94, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 470, 471, 471)} 
+
+[preprocess] data shape: (1, 470, 471, 471)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_030.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 195, 512, 512) after crop: (1, 195, 512, 512) spacing: [3.        0.7421875 0.7421875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.       , 0.7421875, 0.7421875]), 'spacing_transposed': array([3.       , 0.7421875, 0.7421875]), 'data.shape (data is transposed)': (1, 195, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 585, 380, 380)} 
+
+[preprocess] data shape: (1, 585, 380, 380)
+This worker has ended successfully, no errors to report
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_001.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 147, 512, 512) after crop: (1, 147, 512, 512) spacing: [3.         0.66796875 0.66796875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.66796875, 0.66796875]), 'spacing_transposed': array([3.        , 0.66796875, 0.66796875]), 'data.shape (data is transposed)': (1, 147, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 441, 342, 342)} 
+
+[preprocess] data shape: (1, 441, 342, 342)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_005.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 117, 512, 512) after crop: (1, 117, 512, 512) spacing: [3.      0.90625 0.90625] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.90625, 0.90625]), 'spacing_transposed': array([3.     , 0.90625, 0.90625]), 'data.shape (data is transposed)': (1, 117, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 351, 464, 464)} 
+
+[preprocess] data shape: (1, 351, 464, 464)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_014.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 124, 512, 512) after crop: (1, 124, 512, 512) spacing: [3.         0.68554688 0.68554688] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.68554688, 0.68554688]), 'spacing_transposed': array([3.        , 0.68554688, 0.68554688]), 'data.shape (data is transposed)': (1, 124, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 372, 351, 351)} 
+
+[preprocess] data shape: (1, 372, 351, 351)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_021.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 93, 512, 512) after crop: (1, 93, 512, 512) spacing: [3.         0.83789062 0.83789062] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.83789062, 0.83789062]), 'spacing_transposed': array([3.        , 0.83789062, 0.83789062]), 'data.shape (data is transposed)': (1, 93, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 279, 429, 429)} 
+
+[preprocess] data shape: (1, 279, 429, 429)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_026.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 184, 512, 512) after crop: (1, 184, 512, 512) spacing: [3.         0.74609375 0.74609375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.74609375, 0.74609375]), 'spacing_transposed': array([3.        , 0.74609375, 0.74609375]), 'data.shape (data is transposed)': (1, 184, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 552, 382, 382)} 
+
+[preprocess] data shape: (1, 552, 382, 382)
+This worker has ended successfully, no errors to report
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_002.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 139, 512, 512) after crop: (1, 139, 512, 512) spacing: [3.         0.72070312 0.72070312] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.72070312, 0.72070312]), 'spacing_transposed': array([3.        , 0.72070312, 0.72070312]), 'data.shape (data is transposed)': (1, 139, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 417, 369, 369)} 
+
+[preprocess] data shape: (1, 417, 369, 369)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_008.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 148, 512, 512) after crop: (1, 148, 512, 512) spacing: [3.         0.72851562 0.72851562] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.72851562, 0.72851562]), 'spacing_transposed': array([3.        , 0.72851562, 0.72851562]), 'data.shape (data is transposed)': (1, 148, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 444, 373, 373)} 
+
+[preprocess] data shape: (1, 444, 373, 373)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_017.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 88, 512, 512) after crop: (1, 88, 512, 512) spacing: [5.         0.77539098 0.77539098] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.77539098, 0.77539098]), 'spacing_transposed': array([5.        , 0.77539098, 0.77539098]), 'data.shape (data is transposed)': (1, 88, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 440, 397, 397)} 
+
+[preprocess] data shape: (1, 440, 397, 397)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_022.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 144, 512, 512) after crop: (1, 144, 512, 512) spacing: [3.         0.74023438 0.74023438] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.74023438, 0.74023438]), 'spacing_transposed': array([3.        , 0.74023438, 0.74023438]), 'data.shape (data is transposed)': (1, 144, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 432, 379, 379)} 
+
+[preprocess] data shape: (1, 432, 379, 379)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_028.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 100, 512, 512) after crop: (1, 100, 512, 512) spacing: [5.         0.97656202 0.97656202] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.97656202, 0.97656202]), 'spacing_transposed': array([5.        , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 500, 500, 500)} 
+
+[preprocess] data shape: (1, 500, 500, 500)
+This worker has ended successfully, no errors to report
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_003.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 198, 512, 512) after crop: (1, 198, 512, 512) spacing: [3.        0.8984375 0.8984375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.       , 0.8984375, 0.8984375]), 'spacing_transposed': array([3.       , 0.8984375, 0.8984375]), 'data.shape (data is transposed)': (1, 198, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 594, 460, 460)} 
+
+[preprocess] data shape: (1, 594, 460, 460)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_009.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 149, 512, 512) after crop: (1, 149, 512, 512) spacing: [2.5        0.97656202 0.97656202] 
+
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5       , 0.97656202, 0.97656202]), 'spacing_transposed': array([2.5       , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 149, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 372, 500, 500)} 
+
+[preprocess] data shape: (1, 372, 500, 500)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_018.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 89, 512, 512) after crop: (1, 89, 512, 512) spacing: [5.       0.796875 0.796875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.796875, 0.796875]), 'spacing_transposed': array([5.      , 0.796875, 0.796875]), 'data.shape (data is transposed)': (1, 89, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 445, 408, 408)} 
+
+[preprocess] data shape: (1, 445, 408, 408)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_024.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 98, 512, 512) after crop: (1, 98, 512, 512) spacing: [5.       0.671875 0.671875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.671875, 0.671875]), 'spacing_transposed': array([5.      , 0.671875, 0.671875]), 'data.shape (data is transposed)': (1, 98, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 490, 344, 344)} 
+
+[preprocess] data shape: (1, 490, 344, 344)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_029.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 90, 512, 512) after crop: (1, 90, 512, 512) spacing: [5.         0.97600001 0.97600001] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.97600001, 0.97600001]), 'spacing_transposed': array([5.        , 0.97600001, 0.97600001]), 'data.shape (data is transposed)': (1, 90, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 450, 500, 500)} 
+
+[preprocess] data shape: (1, 450, 500, 500)
+This worker has ended successfully, no errors to report
+[evaluate] (1/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_004.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 420, 304, 304)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 117, 175, 234, 292], [0, 59, 117, 176], [0, 59, 117, 176]]
+number of tiles: 96
+computing Gaussian
+done
+prediction done
+[evaluate] (2/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_001.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 441, 342, 342)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 125, 188, 250, 313], [0, 54, 107, 160, 214], [0, 54, 107, 160, 214]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (3/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_002.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 417, 369, 369)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 173, 231, 289], [0, 60, 120, 181, 241], [0, 60, 120, 181, 241]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (4/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_010.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 444, 400, 400)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 54, 109, 163, 218, 272], [0, 54, 109, 163, 218, 272]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[evaluate] (5/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_003.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 594, 460, 460)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 175, 233, 291, 350, 408, 466], [0, 55, 111, 166, 221, 277, 332], [0, 55, 111, 166, 221, 277, 332]]
+number of tiles: 441
+using precomputed Gaussian
+prediction done
+[evaluate] (6/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_005.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 351, 464, 464)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 167, 223], [0, 56, 112, 168, 224, 280, 336], [0, 56, 112, 168, 224, 280, 336]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+[evaluate] (7/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_008.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 444, 373, 373)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 61, 122, 184, 245], [0, 61, 122, 184, 245]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (8/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_019.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 300, 448, 448)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 115, 172], [0, 64, 128, 192, 256, 320], [0, 64, 128, 192, 256, 320]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+[evaluate] (9/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_009.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 372, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+[evaluate] (10/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_014.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 372, 351, 351)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 56, 112, 167, 223], [0, 56, 112, 167, 223]]
+number of tiles: 125
+using precomputed Gaussian
+prediction done
+[evaluate] (11/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_017.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 440, 397, 397)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 62, 125, 187, 250, 312], [0, 54, 108, 161, 215, 269], [0, 54, 108, 161, 215, 269]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[evaluate] (12/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_025.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 470, 471, 471)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 285, 342], [0, 57, 114, 172, 229, 286, 343], [0, 57, 114, 172, 229, 286, 343]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[evaluate] (13/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_018.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 445, 408, 408)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 127, 190, 254, 317], [0, 56, 112, 168, 224, 280], [0, 56, 112, 168, 224, 280]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[evaluate] (14/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_021.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 279, 429, 429)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 50, 101, 151], [0, 60, 120, 181, 241, 301], [0, 60, 120, 181, 241, 301]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+[evaluate] (15/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_022.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 432, 379, 379)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 182, 243, 304], [0, 63, 126, 188, 251], [0, 63, 126, 188, 251]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (16/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_030.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 585, 380, 380)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 286, 343, 400, 457], [0, 63, 126, 189, 252], [0, 63, 126, 189, 252]]
+number of tiles: 225
+using precomputed Gaussian
+prediction done
+[evaluate] (17/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_024.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 490, 344, 344)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 241, 302, 362], [0, 54, 108, 162, 216], [0, 54, 108, 162, 216]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[evaluate] (18/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_026.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 552, 382, 382)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 121, 182, 242, 303, 363, 424], [0, 64, 127, 190, 254], [0, 64, 127, 190, 254]]
+number of tiles: 200
+using precomputed Gaussian
+prediction done
+[evaluate] (19/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_028.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 500, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[evaluate] (20/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_clean/ABD_029.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 450, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 54, 107, 161, 215, 268, 322], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+Inference done. Waiting for NIfTI export to finish...force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+
+[evaluate] Running inference with fake-quantized model...
+Starting preprocessing...
+Starting prediction...
+[evaluate] Prediction loop over 20 case(s)...
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_004.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 140, 512, 512) after crop: (1, 140, 512, 512) spacing: [3.      0.59375 0.59375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.59375, 0.59375]), 'spacing_transposed': array([3.     , 0.59375, 0.59375]), 'data.shape (data is transposed)': (1, 140, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 420, 304, 304)} 
+
+[preprocess] data shape: (1, 420, 304, 304)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_010.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 148, 512, 512) after crop: (1, 148, 512, 512) spacing: [3.      0.78125 0.78125] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.78125, 0.78125]), 'spacing_transposed': array([3.     , 0.78125, 0.78125]), 'data.shape (data is transposed)': (1, 148, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 444, 400, 400)} 
+
+[preprocess] data shape: (1, 444, 400, 400)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_019.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 100, 512, 512) after crop: (1, 100, 512, 512) spacing: [3.    0.875 0.875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.   , 0.875, 0.875]), 'spacing_transposed': array([3.   , 0.875, 0.875]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 300, 448, 448)} 
+
+[preprocess] data shape: (1, 300, 448, 448)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_025.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 94, 512, 512) after crop: (1, 94, 512, 512) spacing: [5.         0.91992199 0.91992199] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.91992199, 0.91992199]), 'spacing_transposed': array([5.        , 0.91992199, 0.91992199]), 'data.shape (data is transposed)': (1, 94, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 470, 471, 471)} 
+
+[preprocess] data shape: (1, 470, 471, 471)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_030.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 195, 512, 512) after crop: (1, 195, 512, 512) spacing: [3.        0.7421875 0.7421875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.       , 0.7421875, 0.7421875]), 'spacing_transposed': array([3.       , 0.7421875, 0.7421875]), 'data.shape (data is transposed)': (1, 195, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 585, 380, 380)} 
+
+[preprocess] data shape: (1, 585, 380, 380)
+This worker has ended successfully, no errors to report
+[evaluate] (1/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_004.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 420, 304, 304)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 117, 175, 234, 292], [0, 59, 117, 176], [0, 59, 117, 176]]
+number of tiles: 96
+computing Gaussian
+done
+prediction done
+[evaluate] (2/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_002.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 417, 369, 369)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 173, 231, 289], [0, 60, 120, 181, 241], [0, 60, 120, 181, 241]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (3/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_001.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 441, 342, 342)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 125, 188, 250, 313], [0, 54, 107, 160, 214], [0, 54, 107, 160, 214]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (4/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_003.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 594, 460, 460)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 116, 175, 233, 291, 350, 408, 466], [0, 55, 111, 166, 221, 277, 332], [0, 55, 111, 166, 221, 277, 332]]
+number of tiles: 441
+using precomputed Gaussian
+prediction done
+[evaluate] (5/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_010.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 444, 400, 400)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 54, 109, 163, 218, 272], [0, 54, 109, 163, 218, 272]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[evaluate] (6/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_008.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 444, 373, 373)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 61, 122, 184, 245], [0, 61, 122, 184, 245]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (7/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_005.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 351, 464, 464)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 167, 223], [0, 56, 112, 168, 224, 280, 336], [0, 56, 112, 168, 224, 280, 336]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+[evaluate] (8/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_009.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 372, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+[evaluate] (9/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_019.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 300, 448, 448)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 115, 172], [0, 64, 128, 192, 256, 320], [0, 64, 128, 192, 256, 320]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+[evaluate] (10/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_017.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 440, 397, 397)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 62, 125, 187, 250, 312], [0, 54, 108, 161, 215, 269], [0, 54, 108, 161, 215, 269]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[evaluate] (11/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_014.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 372, 351, 351)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 56, 112, 167, 223], [0, 56, 112, 167, 223]]
+number of tiles: 125
+using precomputed Gaussian
+prediction done
+[evaluate] (12/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_018.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 445, 408, 408)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 127, 190, 254, 317], [0, 56, 112, 168, 224, 280], [0, 56, 112, 168, 224, 280]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+[evaluate] (13/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_025.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 470, 471, 471)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 285, 342], [0, 57, 114, 172, 229, 286, 343], [0, 57, 114, 172, 229, 286, 343]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[evaluate] (14/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_022.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 432, 379, 379)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 182, 243, 304], [0, 63, 126, 188, 251], [0, 63, 126, 188, 251]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+[evaluate] (15/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_021.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 279, 429, 429)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 50, 101, 151], [0, 60, 120, 181, 241, 301], [0, 60, 120, 181, 241, 301]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+[evaluate] (16/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_024.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 490, 344, 344)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 241, 302, 362], [0, 54, 108, 162, 216], [0, 54, 108, 162, 216]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done
+[evaluate] (17/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_030.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 585, 380, 380)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 286, 343, 400, 457], [0, 63, 126, 189, 252], [0, 63, 126, 189, 252]]
+number of tiles: 225
+using precomputed Gaussian
+prediction done
+[evaluate] (18/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_028.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 500, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 343
+using precomputed Gaussian
+prediction done
+[evaluate] (19/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_026.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 552, 382, 382)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 121, 182, 242, 303, 363, 424], [0, 64, 127, 190, 254], [0, 64, 127, 190, 254]]
+number of tiles: 200
+using precomputed Gaussian
+prediction done
+[evaluate] (20/20) predicting case /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_029.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 450, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 54, 107, 161, 215, 268, 322], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles:[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_002.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 139, 512, 512) after crop: (1, 139, 512, 512) spacing: [3.         0.72070312 0.72070312] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.72070312, 0.72070312]), 'spacing_transposed': array([3.        , 0.72070312, 0.72070312]), 'data.shape (data is transposed)': (1, 139, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 417, 369, 369)} 
+
+[preprocess] data shape: (1, 417, 369, 369)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_008.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 148, 512, 512) after crop: (1, 148, 512, 512) spacing: [3.         0.72851562 0.72851562] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.72851562, 0.72851562]), 'spacing_transposed': array([3.        , 0.72851562, 0.72851562]), 'data.shape (data is transposed)': (1, 148, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 444, 373, 373)} 
+
+[preprocess] data shape: (1, 444, 373, 373)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_017.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 88, 512, 512) after crop: (1, 88, 512, 512) spacing: [5.         0.77539098 0.77539098] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.77539098, 0.77539098]), 'spacing_transposed': array([5.        , 0.77539098, 0.77539098]), 'data.shape (data is transposed)': (1, 88, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 440, 397, 397)} 
+
+[preprocess] data shape: (1, 440, 397, 397)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_022.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 144, 512, 512) after crop: (1, 144, 512, 512) spacing: [3.         0.74023438 0.74023438] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.74023438, 0.74023438]), 'spacing_transposed': array([3.        , 0.74023438, 0.74023438]), 'data.shape (data is transposed)': (1, 144, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 432, 379, 379)} 
+
+[preprocess] data shape: (1, 432, 379, 379)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_028.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 100, 512, 512) after crop: (1, 100, 512, 512) spacing: [5.         0.97656202 0.97656202] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.97656202, 0.97656202]), 'spacing_transposed': array([5.        , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 500, 500, 500)} 
+
+[preprocess] data shape: (1, 500, 500, 500)
+This worker has ended successfully, no errors to report
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_001.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 147, 512, 512) after crop: (1, 147, 512, 512) spacing: [3.         0.66796875 0.66796875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.66796875, 0.66796875]), 'spacing_transposed': array([3.        , 0.66796875, 0.66796875]), 'data.shape (data is transposed)': (1, 147, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 441, 342, 342)} 
+
+[preprocess] data shape: (1, 441, 342, 342)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_005.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 117, 512, 512) after crop: (1, 117, 512, 512) spacing: [3.      0.90625 0.90625] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.90625, 0.90625]), 'spacing_transposed': array([3.     , 0.90625, 0.90625]), 'data.shape (data is transposed)': (1, 117, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 351, 464, 464)} 
+
+[preprocess] data shape: (1, 351, 464, 464)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_014.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 124, 512, 512) after crop: (1, 124, 512, 512) spacing: [3.         0.68554688 0.68554688] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.68554688, 0.68554688]), 'spacing_transposed': array([3.        , 0.68554688, 0.68554688]), 'data.shape (data is transposed)': (1, 124, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 372, 351, 351)} 
+
+[preprocess] data shape: (1, 372, 351, 351)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_021.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 93, 512, 512) after crop: (1, 93, 512, 512) spacing: [3.         0.83789062 0.83789062] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.83789062, 0.83789062]), 'spacing_transposed': array([3.        , 0.83789062, 0.83789062]), 'data.shape (data is transposed)': (1, 93, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 279, 429, 429)} 
+
+[preprocess] data shape: (1, 279, 429, 429)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_026.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 184, 512, 512) after crop: (1, 184, 512, 512) spacing: [3.         0.74609375 0.74609375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.74609375, 0.74609375]), 'spacing_transposed': array([3.        , 0.74609375, 0.74609375]), 'data.shape (data is transposed)': (1, 184, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 552, 382, 382)} 
+
+[preprocess] data shape: (1, 552, 382, 382)
+This worker has ended successfully, no errors to report
+[preprocess] Preprocessing 5 cases
+[preprocess] (1/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_003.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 198, 512, 512) after crop: (1, 198, 512, 512) spacing: [3.        0.8984375 0.8984375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.       , 0.8984375, 0.8984375]), 'spacing_transposed': array([3.       , 0.8984375, 0.8984375]), 'data.shape (data is transposed)': (1, 198, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 594, 460, 460)} 
+
+[preprocess] data shape: (1, 594, 460, 460)
+[preprocess] (2/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_009.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 149, 512, 512) after crop: (1, 149, 512, 512) spacing: [2.5        0.97656202 0.97656202] 
+
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5       , 0.97656202, 0.97656202]), 'spacing_transposed': array([2.5       , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 149, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 372, 500, 500)} 
+
+[preprocess] data shape: (1, 372, 500, 500)
+[preprocess] (3/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_018.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 89, 512, 512) after crop: (1, 89, 512, 512) spacing: [5.       0.796875 0.796875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.796875, 0.796875]), 'spacing_transposed': array([5.      , 0.796875, 0.796875]), 'data.shape (data is transposed)': (1, 89, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 445, 408, 408)} 
+
+[preprocess] data shape: (1, 445, 408, 408)
+[preprocess] (4/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_024.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 98, 512, 512) after crop: (1, 98, 512, 512) spacing: [5.       0.671875 0.671875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.671875, 0.671875]), 'spacing_transposed': array([5.      , 0.671875, 0.671875]), 'data.shape (data is transposed)': (1, 98, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 490, 344, 344)} 
+
+[preprocess] data shape: (1, 490, 344, 344)
+[preprocess] (5/5) preprocessing /home/r/reeshav/MedNeXt/quantization/predictions_quantized/ABD_029.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 90, 512, 512) after crop: (1, 90, 512, 512) spacing: [5.         0.97600001 0.97600001] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.97600001, 0.97600001]), 'spacing_transposed': array([5.        , 0.97600001, 0.97600001]), 'data.shape (data is transposed)': (1, 90, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 450, 500, 500)} 
+
+[preprocess] data shape: (1, 450, 500, 500)
+This worker has ended successfully, no errors to report
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+force_separate_z: None interpolation order: 0
+ 343
+using precomputed Gaussian
+prediction done
+Inference done. Waiting for NIfTI export to finish...
+[evaluate] Evaluating Dice scores for clean model predictions (subset)...
+[evaluate] Evaluating Dice scores for quantized model predictions (subset)...
+[evaluate] Wrote clean model results to /home/r/reeshav/MedNeXt/quantization/mednext_validation.json
+[evaluate] Wrote quantized model results to /home/r/reeshav/MedNeXt/quantization/mednext_quantized_validation.json

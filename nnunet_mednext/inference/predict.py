@@ -38,10 +38,12 @@ def preprocess_save_to_queue(preprocess_fn, q, list_of_lists, output_files, segs
     # sys.stdout = open(os.devnull, 'w')
 
     errors_in = []
+    total = len(list_of_lists)
+    print(f"[preprocess] Preprocessing {total} cases")
     for i, l in enumerate(list_of_lists):
         try:
             output_file = output_files[i]
-            print("preprocessing", output_file)
+            print(f"[preprocess] ({i + 1}/{total}) preprocessing {output_file}")
             d, _, dct = preprocess_fn(l)
             # print(output_file, dct)
             if segs_from_prev_stage[i] is not None:
@@ -67,7 +69,7 @@ def preprocess_save_to_queue(preprocess_fn, q, list_of_lists, output_files, segs
             patching system python code. We circumvent that problem here by saving softmax_pred to a npy file that will 
             then be read (and finally deleted) by the Process. save_segmentation_nifti_from_softmax can take either 
             filename or np.ndarray and will handle this automatically"""
-            print(d.shape)
+            print("[preprocess] data shape:", d.shape)
             if np.prod(d.shape) > (2e9 / 4 * 0.85):  # *0.85 just to be save, 4 because float32 is 4 bytes
                 print(
                     "This output is too large for python process-process communication. "
