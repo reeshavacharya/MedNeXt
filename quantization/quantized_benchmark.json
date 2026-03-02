@@ -1,4 +1,32 @@
 {
-  "clean_avg_dice": 0.8976638389173639,
-  "quantized_avg_dice": 0.8953449646708871
+  "clean": {
+    "Accuracy": 0.9994862869717003,
+    "Dice": 0.8976638389173639,
+    "False Discovery Rate": 0.09871152919269845,
+    "False Negative Rate": 0.09420448217007639,
+    "False Omission Rate": 0.00025264508514142507,
+    "False Positive Rate": 0.00026705441313311015,
+    "Jaccard": 0.831454386164052,
+    "Negative Predictive Value": 0.9997473549148584,
+    "Precision": 0.9012884708073017,
+    "Recall": 0.9057955178299235,
+    "Total Positives Reference": 119502.69230769231,
+    "Total Positives Test": 119903.42307692308,
+    "True Negative Rate": 0.9997329455868671
+  },
+  "quantized": {
+    "Accuracy": 0.999481553461146,
+    "Dice": 0.8950630264647282,
+    "False Discovery Rate": 0.09980164587101505,
+    "False Negative Rate": 0.09842117694594234,
+    "False Omission Rate": 0.00025005136999063513,
+    "False Positive Rate": 0.00027449113538392057,
+    "Jaccard": 0.8271866977261495,
+    "Negative Predictive Value": 0.9997499486300094,
+    "Precision": 0.9001983541289851,
+    "Recall": 0.9015788230540575,
+    "Total Positives Reference": 119502.69230769231,
+    "Total Positives Test": 120228.64615384616,
+    "True Negative Rate": 0.999725508864616
+  }
 }

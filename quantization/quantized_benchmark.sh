@@ -2,8 +2,9 @@
 
 # Benchmark clean vs quantized validation metrics.
 # Reads mednext_validation.json and mednext_quantized_validation.json and
-# writes quantized_benchmark.json with only the average Dice across labels
-# (foreground classes) for clean and quantized validations.
+# writes quantized_benchmark.json with the foreground-class averages for
+# all available scalar metrics (Dice, Accuracy, Jaccard, etc.) for both
+# clean and quantized validations.
 
 set -euo pipefail
 
@@ -37,22 +38,50 @@ quant_data = json.loads(quant_path.read_text())
 clean_mean = clean_data.get("mean", {})
 quant_mean = quant_data.get("mean", {})
 
-def avg_dice(mean_dict):
-    values = []
+
+def foreground_average_for_all_metrics(mean_dict):
+  """Compute per-metric averages over all foreground classes.
+
+  mean_dict is the "mean" section from nnUNet's aggregate_scores,
+  mapping class_id -> {metric_name: value}.
+  We skip class "0" (background) and, for each metric present in the
+  first foreground class, compute the arithmetic mean across
+  foreground classes where that metric is defined.
+  """
+
+  # Find one foreground class to discover available metric names
+  first_fg_metrics = None
+  for cls_id, metrics in mean_dict.items():
+    if str(cls_id) == "0":
+      continue
+    first_fg_metrics = metrics
+    break
+
+  if first_fg_metrics is None:
+    return {}
+
+  metric_names = list(first_fg_metrics.keys())
+  averages = {}
+
+  for metric in metric_names:
+    vals = []
     for cls_id, metrics in mean_dict.items():
-        # skip background class "0"
-        if str(cls_id) == "0":
-            continue
-        d = metrics.get("Dice")
-        if d is not None:
-            values.append(d)
-    return (sum(values) / len(values)) if values else None
+      if str(cls_id) == "0":
+        continue
+      v = metrics.get(metric)
+      if isinstance(v, (int, float)):
+        vals.append(float(v))
+    if vals:
+      averages[metric] = sum(vals) / len(vals)
+
+  return averages
+
 
 result = {
-    "clean_avg_dice": avg_dice(clean_mean),
-    "quantized_avg_dice": avg_dice(quant_mean),
+  "clean": foreground_average_for_all_metrics(clean_mean),
+  "quantized": foreground_average_for_all_metrics(quant_mean),
 }
 
 out_path.write_text(json.dumps(result, indent=2))
-print(f"Wrote average Dice benchmark to {out_path}")
+print(f"Wrote averaged metric benchmark to {out_path}")
 EOF

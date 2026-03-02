@@ -204,3 +204,78 @@ def load_fake_quantized_trainer():
 	net.eval()
 
 	return trainer
+
+
+def save_fake_quantized_checkpoint(
+	output_path: str = None,
+	)-> str:
+	"""Create and save a fake-quantized network checkpoint to disk.
+
+	This applies the same fake quantization as load_fake_quantized_trainer
+	(starting from the final FP32 checkpoint) and then writes the
+	network's state_dict() to a .pt file.
+
+	Parameters
+	----------
+	output_path : str, optional
+		Target file path for the checkpoint. If omitted, defaults to
+		quantization/fake_quant_mednext_task017.pt under the project root.
+
+	Returns
+	-------
+	str
+		The path where the checkpoint was written.
+	"""
+
+	if network_training_output_dir is None:
+		raise RuntimeError(
+			"network_training_output_dir is None. Set RESULTS_FOLDER before loading the model."
+		)
+
+	# Reuse the trainer loading logic from load_fake_quantized_trainer
+	task_name = "Task017_AbdominalOrganSegmentation"
+	trainer_name = "nnUNetTrainerV2_MedNeXt_S_kernel3"
+	plans_id = "nnUNetPlansv2.1_trgSp_1x1x1"
+
+	model_folder = join(
+		network_training_output_dir,
+		"3d_fullres",
+		task_name,
+		f"{trainer_name}__{plans_id}",
+	)
+	if not os.path.isdir(model_folder):
+		raise RuntimeError(f"Model folder not found: {model_folder}")
+
+	print(f"[quantized_model] Loading FP32 model from {model_folder} for export")
+	trainer, params = load_model_and_checkpoint_files(
+		model_folder,
+		folds=[0],
+		mixed_precision=False,
+		checkpoint_name="model_final_checkpoint",
+	)
+	if not params:
+		raise RuntimeError(
+			"No checkpoint parameters returned by load_model_and_checkpoint_files"
+		)
+
+	trainer.load_checkpoint_ram(params[0], False)
+	net = trainer.network
+
+	# Apply the same fake quantization (weights + activations)
+	_quantize_module_weights(net)
+	scales = _load_scales()
+	_wrap_model_with_fake_quant(net, scales)
+	net.eval()
+
+	# Default path inside the quantization folder if none given
+	if output_path is None:
+		this_dir = os.path.dirname(os.path.abspath(__file__))
+		output_path = os.path.join(
+			this_dir,
+			"fake_quant_mednext_task017.pt",
+		)
+
+	os.makedirs(os.path.dirname(output_path), exist_ok=True)
+	print(f"[quantized_model] Saving fake-quantized state_dict to {output_path}")
+	torch.save(net.state_dict(), output_path)
+	return output_path
