@@ -1,0 +1,168 @@
+[evaluate_onnx] Loading FP32 trainer from /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+This model expects 1 input modalities for each image
+Found 30 unique case ids, here are some examples: ['ABD_016' 'ABD_006' 'ABD_023' 'ABD_005' 'ABD_021' 'ABD_027' 'ABD_009'
+ 'ABD_011' 'ABD_023' 'ABD_013']
+If they don't look right, make sure to double check your filenames. They must end with _0000.nii.gz etc
+[evaluate_onnx] Using 10 cases out of 30 for evaluation.
+[evaluate_onnx] Running FP32 nnUNet inference...
+[FP32] (1/10) preprocessing ABD_001
+using preprocessor GenericPreprocessor
+before crop: (1, 147, 512, 512) after crop: (1, 147, 512, 512) spacing: [3.         0.66796875 0.66796875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.66796875, 0.66796875]), 'spacing_transposed': array([3.        , 0.66796875, 0.66796875]), 'data.shape (data is transposed)': (1, 147, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 441, 342, 342)} 
+
+[FP32] (1/10) predicting ABD_001
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 441, 342, 342)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 125, 188, 250, 313], [0, 54, 107, 160, 214], [0, 54, 107, 160, 214]]
+number of tiles: 150
+computing Gaussian
+done
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (2/10) preprocessing ABD_004
+using preprocessor GenericPreprocessor
+before crop: (1, 140, 512, 512) after crop: (1, 140, 512, 512) spacing: [3.      0.59375 0.59375] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.59375, 0.59375]), 'spacing_transposed': array([3.     , 0.59375, 0.59375]), 'data.shape (data is transposed)': (1, 140, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 420, 304, 304)} 
+
+[FP32] (2/10) predicting ABD_004
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 420, 304, 304)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 58, 117, 175, 234, 292], [0, 59, 117, 176], [0, 59, 117, 176]]
+number of tiles: 96
+using precomputed Gaussian
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (3/10) preprocessing ABD_005
+using preprocessor GenericPreprocessor
+before crop: (1, 117, 512, 512) after crop: (1, 117, 512, 512) spacing: [3.      0.90625 0.90625] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.     , 0.90625, 0.90625]), 'spacing_transposed': array([3.     , 0.90625, 0.90625]), 'data.shape (data is transposed)': (1, 117, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 351, 464, 464)} 
+
+[FP32] (3/10) predicting ABD_005
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 351, 464, 464)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 56, 112, 167, 223], [0, 56, 112, 168, 224, 280, 336], [0, 56, 112, 168, 224, 280, 336]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (4/10) preprocessing ABD_008
+using preprocessor GenericPreprocessor
+before crop: (1, 148, 512, 512) after crop: (1, 148, 512, 512) spacing: [3.         0.72851562 0.72851562] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.72851562, 0.72851562]), 'spacing_transposed': array([3.        , 0.72851562, 0.72851562]), 'data.shape (data is transposed)': (1, 148, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 444, 373, 373)} 
+
+[FP32] (4/10) predicting ABD_008
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 444, 373, 373)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 126, 190, 253, 316], [0, 61, 122, 184, 245], [0, 61, 122, 184, 245]]
+number of tiles: 150
+using precomputed Gaussian
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (5/10) preprocessing ABD_009
+using preprocessor GenericPreprocessor
+before crop: (1, 149, 512, 512) after crop: (1, 149, 512, 512) spacing: [2.5        0.97656202 0.97656202] 
+
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5       , 0.97656202, 0.97656202]), 'spacing_transposed': array([2.5       , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 149, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 372, 500, 500)} 
+
+[FP32] (5/10) predicting ABD_009
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 372, 500, 500)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 61, 122, 183, 244], [0, 62, 124, 186, 248, 310, 372], [0, 62, 124, 186, 248, 310, 372]]
+number of tiles: 245
+using precomputed Gaussian
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (6/10) preprocessing ABD_018
+using preprocessor GenericPreprocessor
+before crop: (1, 89, 512, 512) after crop: (1, 89, 512, 512) spacing: [5.       0.796875 0.796875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.796875, 0.796875]), 'spacing_transposed': array([5.      , 0.796875, 0.796875]), 'data.shape (data is transposed)': (1, 89, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 445, 408, 408)} 
+
+[FP32] (6/10) predicting ABD_018
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 445, 408, 408)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 63, 127, 190, 254, 317], [0, 56, 112, 168, 224, 280], [0, 56, 112, 168, 224, 280]]
+number of tiles: 216
+using precomputed Gaussian
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (7/10) preprocessing ABD_021
+using preprocessor GenericPreprocessor
+before crop: (1, 93, 512, 512) after crop: (1, 93, 512, 512) spacing: [3.         0.83789062 0.83789062] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.83789062, 0.83789062]), 'spacing_transposed': array([3.        , 0.83789062, 0.83789062]), 'data.shape (data is transposed)': (1, 93, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 279, 429, 429)} 
+
+[FP32] (7/10) predicting ABD_021
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 279, 429, 429)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 50, 101, 151], [0, 60, 120, 181, 241, 301], [0, 60, 120, 181, 241, 301]]
+number of tiles: 144
+using precomputed Gaussian
+prediction done
+force_separate_z: None interpolation order: 0
+[FP32] (8/10) preprocessing ABD_024
+using preprocessor GenericPreprocessor
+before crop: (1, 98, 512, 512) after crop: (1, 98, 512, 512) spacing: [5.       0.671875 0.671875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.      , 0.671875, 0.671875]), 'spacing_transposed': array([5.      , 0.671875, 0.671875]), 'data.shape (data is transposed)': (1, 98, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 490, 344, 344)} 
+
+[FP32] (8/10) predicting ABD_024
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 490, 344, 344)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 60, 121, 181, 241, 302, 362], [0, 54, 108, 162, 216], [0, 54, 108, 162, 216]]
+number of tiles: 175
+using precomputed Gaussian
+prediction done

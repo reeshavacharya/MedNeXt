@@ -1,0 +1,20 @@
+[run_onnx] ROOT_DIR=/home/r/reeshav/MedNeXt
+[run_onnx] nnUNet_raw_data_base=/data/reeshav/MedNeXt_dataset/Abdomen
+[run_onnx] nnUNet_preprocessed=/home/r/reeshav/MedNeXt/nnUNet_preprocessed
+[run_onnx] RESULTS_FOLDER=/home/r/reeshav/MedNeXt/nnUNet_results
+[run_onnx] Exporting FP32 ONNX to ONNX_quantization/mednext_task017_fp32.onnx
+[export_onnx] Loading FP32 trainer from /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+[export_onnx] Exporting with dummy input shape: (1, 1, 128, 128, 128)
+[export_onnx] Writing ONNX model to /home/r/reeshav/MedNeXt/ONNX_quantization/mednext_task017_fp32.onnx
+[export_onnx] Export complete.
+You can now apply INT8 PTQ using TensorRT or ONNX Runtime on the exported ONNX model.
+[run_onnx] Quantizing to INT8 -> ONNX_quantization/mednext_task017_int8.onnx
+[quantize_int8] Loading trainer from /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+[quantize_int8] Patch size: (np.int64(128), np.int64(128), np.int64(128)), in_channels: 1
+[quantize_int8] Using 30 calibration samples from preprocessed data
+[quantize_int8] Quantizing /home/r/reeshav/MedNeXt/ONNX_quantization/mednext_task017_fp32.onnx -> /home/r/reeshav/MedNeXt/ONNX_quantization/mednext_task017_int8.onnx
+[quantize_int8] INT8 model saved to /home/r/reeshav/MedNeXt/ONNX_quantization/mednext_task017_int8.onnx
+You can now run inference with onnxruntime using this INT8 model. For GPU INT8, ensure CUDAExecutionProvider with INT8 support is available.
+[run_onnx] DONE. INT8 model at ONNX_quantization/mednext_task017_int8.onnx
