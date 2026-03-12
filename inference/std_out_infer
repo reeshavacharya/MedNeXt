@@ -1,0 +1,56 @@
+This model expects 1 input modalities for each image
+Found 30 unique case ids, here are some examples: ['ABD_018' 'ABD_016' 'ABD_014' 'ABD_003' 'ABD_005' 'ABD_025' 'ABD_022'
+ 'ABD_006' 'ABD_009' 'ABD_019']
+If they don't look right, make sure to double check your filenames. They must end with _0000.nii.gz etc
+[infer] Selected random case: ABD_030
+[infer][timing] Case selection + file list: 0.01 s
+[infer] Loading FP32 trainer...
+using the following model files:  ['/home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/fold_0/model_final_checkpoint.model']
+[infer][timing] Model load (trainer + checkpoint): 2.45 s
+[infer] Running nnUNet-style inference for the selected case...
+Starting preprocessing...
+[infer][timing] Created preprocess iterator: 0.00 s
+Starting prediction...
+[evaluate] Prediction loop over 1 case(s)...
+[preprocess] Preprocessing 1 cases
+[preprocess] (1/1) preprocessing /home/r/reeshav/MedNeXt/inference/predictions_single/ABD_030.nii.gz
+using preprocessor GenericPreprocessor
+before crop: (1, 195, 512, 512) after crop: (1, 195, 512, 512) spacing: [3.        0.7421875 0.7421875] 
+
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.       , 0.7421875, 0.7421875]), 'spacing_transposed': array([3.       , 0.7421875, 0.7421875]), 'data.shape (data is transposed)': (1, 195, 512, 512)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 585, 380, 380)} 
+
+[preprocess] data shape: (1, 585, 380, 380)
+This worker has ended successfully, no errors to report
+force_separate_z: None interpolation order: 0
+[evaluate] (1/1) predicting case /home/r/reeshav/MedNeXt/inference/predictions_single/ABD_030.nii.gz
+debug: mirroring True mirror_axes (0, 1, 2)
+step_size: 0.5
+do mirror: True
+data shape: (1, 585, 380, 380)
+patch size: [128 128 128]
+steps (x, y, and z): [[0, 57, 114, 171, 228, 286, 343, 400, 457], [0, 63, 126, 189, 252], [0, 63, 126, 189, 252]]
+number of tiles: 225
+computing Gaussian
+done
+prediction done
+[infer][timing] Sliding-window prediction (with TTA) for case /home/r/reeshav/MedNeXt/inference/predictions_single/ABD_030.nii.gz: 163.76 s
+[infer][timing] Total sliding-window prediction (all cases): 163.76 s
+[infer][timing] Preprocessing + prediction (no export): 180.84 s
+Inference done. Waiting for NIfTI export to finish...
+[infer][timing] NIfTI export (all cases): 1.81 s
+[infer][timing] Preprocessing + sliding-window + export (helper total): 182.65 s
+[infer][timing] Preprocessing + overhead (approx.): 17.08 s
+[infer][timing] _predict_cases_with_trainer total runtime: 182.68 s
+[infer][timing] Preprocessing + sliding-window prediction + NIfTI export (outer): 182.68 s
+[infer] Loading prediction from /home/r/reeshav/MedNeXt/inference/predictions_single/ABD_030.nii.gz
+[infer] Loading ground truth from /data/reeshav/MedNeXt_dataset/Abdomen/nnUNet_raw_data/Task017_AbdominalOrganSegmentation/labelsTr/ABD_030.nii.gz
+[infer][timing] Load NIfTI + to numpy arrays: 0.02 s
+[infer] Computing evaluation metrics (Dice, Accuracy, etc.)...
+[infer][timing] Metric computation (Evaluator): 6.97 s
+[infer][timing] TOTAL pipeline time (case selection -> metrics): 192.48 s
+[infer] Writing metrics JSON to /home/r/reeshav/MedNeXt/inference/inference.json
+[infer] Done.
+[SLURM] Job completed at Wed Mar 11 22:51:54 EDT 2026

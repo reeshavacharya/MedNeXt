@@ -1,0 +1,80 @@
+[2026-03-09 16:59:12,744] [INFO] __main__: [CLI] Using device: cuda
+[2026-03-09 16:59:12,973] [INFO] __main__: [CLI] Output directory: dynamic_trt_results
+[2026-03-09 16:59:12,977] [INFO] __main__: [CLI] Loading FP32 model from /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+[2026-03-09 17:00:03,964] [INFO] __main__: [CLI] Network stem expects 1 input channel(s)
+[2026-03-09 17:00:04,677] [INFO] __main__: [CLI] Using 1 calibration cases
+[2026-03-09 17:00:04,677] [INFO] __main__: [CLI] Starting calibration (method=minmax)
+[2026-03-09 17:00:04,677] [INFO] quantization_dynamic.calibrate: Starting calibration
+[2026-03-09 17:00:04,677] [INFO] quantization_dynamic.calibrate: Calibration method: minmax
+[2026-03-09 17:00:04,677] [INFO] quantization_dynamic.model_wrappers: Wrapping model for calibration
+[2026-03-09 17:00:04,679] [INFO] quantization_dynamic.model_wrappers: Registering activation observers
+[2026-03-09 17:00:04,679] [INFO] quantization_dynamic.activation_observer: Registering activation observers
+[2026-03-09 17:00:04,680] [INFO] quantization_dynamic.model_wrappers: Initializing patch-based inference wrapper
+[2026-03-09 17:00:06,767] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:00:06,768] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:00:34,740] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:00:34,741] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:00:48,502] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:00:48,503] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:01:04,684] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:01:04,685] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:01:14,391] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:01:14,392] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:01:28,116] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:01:28,117] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:01:39,079] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:01:39,080] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:01:50,358] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:01:50,359] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:02:02,246] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:02:02,247] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:02:14,079] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:02:14,080] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:02:29,928] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:02:29,928] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:02:45,083] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:02:45,084] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:03:06,487] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:03:06,488] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:03:18,276] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:03:18,277] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:03:32,303] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:03:32,305] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:03:43,766] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:03:43,767] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:03:57,128] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:03:57,129] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:04:12,956] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:04:12,957] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:04:21,937] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:04:21,938] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:04:38,608] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:04:38,609] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:04:53,724] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:04:53,725] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:05:10,384] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:05:10,385] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:05:22,678] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:05:22,679] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:05:37,603] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:05:37,604] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:05:53,852] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:05:53,853] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:06:10,177] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:06:10,178] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:06:32,420] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:06:32,421] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:06:59,605] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:06:59,606] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:07:33,672] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:07:33,673] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:08:17,351] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:08:17,352] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:09:13,365] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:09:13,366] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:10:50,448] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:10:50,449] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+[2026-03-09 17:11:35,046] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-09 17:11:35,047] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=306332.0. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: GPU45: task 0: Out Of Memory

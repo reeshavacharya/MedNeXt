@@ -1,0 +1,32 @@
+[SLURM] Job started at Sun Mar  8 16:56:14 EDT 2026
+[SLURM] Running on host GPU6.cse.usf.edu
+[SLURM] CUDA devices: 0
+[SLURM] GPU status before run:
+Sun Mar  8 16:56:14 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 1080 Ti      Off| 00000000:02:00.0 Off |                  N/A |
+| 25%   29C    P8               11W / 250W|      0MiB / 11264MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+[SLURM] ==========================================================
+[SLURM] Step 1/5: FP32 model loading + environment setup (inside Python)
+[SLURM] Step 2/5: Calibration and activation statistics collection
+[SLURM] Step 3/5: Weight quantization and (optional) bit-packing
+[SLURM] Step 4/5: ONNX export and TensorRT INT8 engine build
+[SLURM] Step 5/5: TensorRT inference on validation / test data
+[SLURM] ==========================================================
+[SLURM] Launching Python quantization + TensorRT pipeline via quantization_dynamic.quantize

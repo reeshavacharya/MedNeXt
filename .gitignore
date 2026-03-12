@@ -114,3 +114,5 @@ ENV/
 
 *.model
 
+/nnUNet_preprocessed/*
+/nnUNet_results/*

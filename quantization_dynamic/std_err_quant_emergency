@@ -1,0 +1,32 @@
+[2026-03-08 17:00:20,065] [INFO] __main__: [CLI] Using device: cuda
+[2026-03-08 17:00:20,068] [INFO] __main__: [CLI] Output directory: dynamic_trt_results
+[2026-03-08 17:00:20,074] [INFO] __main__: [CLI] Loading FP32 model from /home/r/reeshav/MedNeXt/nnUNet_results/nnUNet/3d_fullres/Task017_AbdominalOrganSegmentation/nnUNetTrainerV2_MedNeXt_S_kernel3__nnUNetPlansv2.1_trgSp_1x1x1
+/home/r/reeshav/MedNeXt/.venv/lib/python3.9/site-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GeForce GTX 1080 Ti which is of cuda capability 6.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (7.0) - (12.0)
+    
+  warnings.warn(
+/home/r/reeshav/MedNeXt/.venv/lib/python3.9/site-packages/torch/cuda/__init__.py:304: UserWarning: 
+    Please install PyTorch with a following CUDA
+    configurations:  12.6 following instructions at
+    https://pytorch.org/get-started/locally/
+    
+  warnings.warn(matched_cuda_warn.format(matched_arches))
+/home/r/reeshav/MedNeXt/.venv/lib/python3.9/site-packages/torch/cuda/__init__.py:326: UserWarning: 
+NVIDIA GeForce GTX 1080 Ti with CUDA capability sm_61 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.
+If you want to use the NVIDIA GeForce GTX 1080 Ti GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+[2026-03-08 17:01:03,110] [INFO] __main__: [CLI] Network stem expects 1 input channel(s)
+[2026-03-08 17:01:03,151] [INFO] __main__: [CLI] Using 1 calibration cases
+[2026-03-08 17:01:03,151] [INFO] __main__: [CLI] Starting calibration (method=minmax)
+[2026-03-08 17:01:03,151] [INFO] quantization_dynamic.calibrate: Starting calibration
+[2026-03-08 17:01:03,151] [INFO] quantization_dynamic.calibrate: Calibration method: minmax
+[2026-03-08 17:01:03,151] [INFO] quantization_dynamic.model_wrappers: Wrapping model for calibration
+[2026-03-08 17:01:03,155] [INFO] quantization_dynamic.model_wrappers: Registering activation observers
+[2026-03-08 17:01:03,155] [INFO] quantization_dynamic.activation_observer: Registering activation observers
+[2026-03-08 17:01:08,450] [INFO] quantization_dynamic.calibrate: Collecting activation stats on calibration batch
+[2026-03-08 17:01:08,457] [INFO] quantization_dynamic.model_wrappers: Running base model forward
+srun: error: GPU6: task 0: Segmentation fault (core dumped)

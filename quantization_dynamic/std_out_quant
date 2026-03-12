@@ -1,0 +1,32 @@
+[SLURM] Job started at Mon Mar  9 16:57:28 EDT 2026
+[SLURM] Running on host GPU45.cse.usf.edu
+[SLURM] CUDA devices: 0
+[SLURM] GPU status before run:
+Mon Mar  9 16:57:28 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100 80GB PCIe          Off | 00000000:61:00.0 Off |                    0 |
+| N/A   36C    P0              44W / 300W |      4MiB / 81920MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+[SLURM] ==========================================================
+[SLURM] Step 1/5: FP32 model loading + environment setup (inside Python)
+[SLURM] Step 2/5: Calibration and activation statistics collection
+[SLURM] Step 3/5: Weight quantization and (optional) bit-packing
+[SLURM] Step 4/5: ONNX export and TensorRT INT8 engine build
+[SLURM] Step 5/5: TensorRT inference on validation / test data
+[SLURM] ==========================================================
+[SLURM] Launching Python quantization + TensorRT pipeline via quantization_dynamic.quantize
